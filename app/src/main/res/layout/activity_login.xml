@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/caviardreams"
+            android:gravity="center"
+            android:text="Panun Makaan"
+            android:textColor="#2e8b57"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            >
+
+        </ImageView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="center|center_horizontal"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+
+                <Button
+                    android:onClick="LoginWithMobileNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/custom_box_outline"
+                    android:backgroundTint="@color/red"
+                    android:fontFamily="@font/caviardreams"
+                    android:foregroundGravity="center"
+                    android:shadowRadius="50"
+                    android:text="Login with Mobile number and OTP"
+                    android:textColor="#fff"
+                    android:textAllCaps="false"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/custom_box_outline"
+                    android:backgroundTint="@color/red"
+                    android:fontFamily="@font/caviardreams"
+                    android:foregroundGravity="center"
+                    android:onClick="LoginWithEmail"
+                    android:shadowRadius="50"
+                    android:text="Login with email and Password"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/SignUp"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+<!--    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="100dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/caviardreams"
+                    android:gravity="center"
+                    android:text="Panun Makaan"
+                    android:textColor="#fff"
+                    android:textSize="50sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:src="@drawable/logo"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_gravity="center_horizontal"
+                    >
+
+                </ImageView>
+
+ &lt;!&ndash;
+      Add the below line in EditText to have pencil icon in the edittext field
+      android:drawableRight="@drawable/ic_mode_edit_black_24dp"
+  &ndash;&gt;
+
+
+                <EditText
+                    android:id="@+id/etLoginMobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/caviardreams"
+                    android:hint="Email Id "
+                    android:maxLength="10"
+                    android:textColor="#fff"
+                    android:textColorHint="#FFF"
+                    android:textStyle="bold" />
+
+
+
+
+                <EditText
+                    android:id="@+id/etLoginPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/caviardreams"
+                    android:hint="Password"
+                    android:maxLength="10"
+                    android:textColor="#fff"
+                    android:textColorHint="#FFF"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:onClick="loginBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/round_button"
+                    android:fontFamily="@font/caviardreams"
+                    android:foregroundGravity="center"
+                    android:shadowRadius="50"
+                    android:text="Login"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Forgot password ?"
+                android:gravity="center_horizontal"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+                <TextView
+                    android:onClick="LoginWithMobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Login with Mobile No. and OTP"
+                    android:gravity="center_horizontal"
+                    android:textColor="#FFF"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/registration_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Sign up"
+                    android:textColor="#FFF"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>-->
+
+
+</LinearLayout>
+
+
+</LinearLayout>

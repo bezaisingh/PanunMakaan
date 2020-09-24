@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jacknjana.panunmaakan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".LoginWithEmail"></activity>
+        <activity android:name=".EnterOTP" />
+        <activity android:name=".LoginWithMobile" />
+        <activity android:name=".SearchResult" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".BuyerRelaxPlan" />
+        <activity android:name=".BuyerPlan" />
+        <activity android:name=".LandList" />
+        <activity android:name=".CommercialList" />
+        <activity android:name=".ResidentialList" />
+        <activity android:name=".DescriptionLand" />
+        <activity android:name=".NearbyFacilityLand" />
+        <activity android:name=".LocalityDetailsLand" />
+        <activity android:name=".LandDetails" />
+        <activity android:name=".DescriptionCom" />
+        <activity android:name=".PriceDetailsCom" />
+        <activity android:name=".LocalityDetailsCom" />
+        <activity android:name=".PropertyDetailsCom" />
+        <activity android:name=".PropertyImage" />
+        <activity android:name=".DescriptionRes" />
+        <activity android:name=".NearbyFacilityRes" />
+        <activity android:name=".PriceDetailsRes" />
+        <activity android:name=".LocalityDetailsRes" />
+        <activity android:name=".PropertyDetailsRes" />
+        <activity android:name=".CreateListingActivity" />
+        <activity android:name=".Profile_Activity" />
+        <activity android:name=".RegistrationPage" />
+        <activity android:name=".LoginActivity" />
+
+        <activity android:name=".MainActivity">
+
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+
+        </intent-filter>
+    </activity>
+
+
+<!--        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            >
+<intent-filter>
+    <action android:name="android.intent.action.MAIN" />
+
+    <category android:name="android.intent.category.LAUNCHER" />
+
+</intent-filter>
+
+       &lt;!&ndash;     <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>&ndash;&gt;
+        </activity>
+        -->
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF00FF"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="@font/caviardreams"
+            android:gravity="center"
+            android:text="Panun Makaan"
+            android:textColor="#fff"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableRight="@drawable/ic_mode_edit_black_24dp"
+            android:fontFamily="@font/caviardreams"
+            android:hint="Mobile number / email address"
+            android:maxLength="10"
+            android:phoneNumber="true"
+            android:textColor="#fff"
+            android:textColorHint="#FFF"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableRight="@drawable/ic_mode_edit_black_24dp"
+            android:fontFamily="@font/caviardreams"
+            android:hint="Password"
+            android:maxLength="10"
+            android:password="true"
+            android:phoneNumber="true"
+            android:textColor="#fff"
+            android:textColorHint="#FFF"
+            android:textStyle="bold" />
+
+        <Button
+
+            android:id="@+id/btnOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/gr_bg_app"
+            android:drawableRight="@drawable/ic_directions_bike_black_24dp"
+            android:fontFamily="@font/contact_font"
+            android:foregroundGravity="center"
+            android:text="O k a y"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Forget password ?"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="or"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Register here..."
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

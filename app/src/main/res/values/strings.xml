@@ -1,0 +1,184 @@
+<resources>
+    <string name="app_name">Panun Makaan</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="url">http://makaan.disgenonline.in:8081/</string>
+
+    <string name="SignUp"><u>Sign Up</u></string>
+
+    <string name="Underline"> Don\'t have an account? <u>Sign Up</u>.</string>
+
+    <!--
+Localhost url
+http://192.168.43.91:8081/
+
+Server url
+http://makaan.disgenonline.in:8081/
+-->
+
+    <string-array name="numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="totalFloorArray">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="floorNumberArray">
+        <item>Select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+
+    </string-array>
+    <string-array name="hallNumberArray">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+
+    </string-array>
+
+
+    <string-array name="parkingArray">
+        <item>Covered</item>
+        <item>Open</item>
+        <item>No</item>
+
+    </string-array>
+
+
+    <string-array name="furnishingStatusArray">
+        <item>Unfurnished</item>
+        <item>Semi Furnished</item>
+        <item>Fully Furnished</item>
+
+    </string-array>
+
+
+    <string-array name="kitchenTypeArray">
+        <item>Modular</item>
+        <item>Open Shelves</item>
+
+    </string-array>
+
+    <string-array name="ageOfPropertyArray">
+        <item>1-3</item>
+        <item>3-5</item>
+        <item>5-10</item>
+        <item>>10</item>
+
+    </string-array>
+    <string-array name="bedroomArray">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="propertyTypeArray">
+        <item>Shop</item>
+        <item>Office</item>
+        <item>Showroom</item>
+        <item>Godown</item>
+        <item>Commercial Building</item>
+    </string-array>
+
+    <string-array name="districtArray">
+        <item>Select</item>
+        <item>Anantnag</item>
+        <item>Bandipora</item>
+        <item>Baramulla</item>
+        <item>Budgam</item>
+        <item>Doda</item>
+        <item>Ganderbal</item>
+        <item>Jammu</item>
+        <item>Kathua</item>
+        <item>Kishtwar</item>
+        <item>Kulgam</item>
+        <item>Kupwara</item>
+        <item>Poonch</item>
+        <item>Pulwama</item>
+        <item>Rajouri</item>
+        <item>Ramban</item>
+        <item>Reasi</item>
+        <item>Shopian</item>
+        <item>Srinagar</item>
+    </string-array>
+
+    <string-array name="regTypeArray">
+        <item>Buyer</item>
+        <item>Seller</item>
+        <item>Broker</item>
+        <item>Agent</item>
+    </string-array>
+
+    <string-array name="yesNoArray">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="kanalArray">
+        <item>1 Kanal</item>
+        <item>2 Kanal</item>
+        <item>3 Kanal</item>
+        <item>4 Kanal</item>
+        <item>5 Kanal</item>
+
+    </string-array>
+
+    <string-array name="marlaArray">
+        <item>1 Marla</item>
+        <item>2 Marla</item>
+        <item>3 Marla</item>
+        <item>4 Marla</item>
+        <item>5 Marla</item>
+        <item>6 Marla</item>
+        <item>7 Marla</item>
+        <item>8 Marla</item>
+    </string-array>
+
+    <string-array name="bathroomAttachArray">
+        <item>1 Attach</item>
+        <item>2 Attach</item>
+        <item>3 Attach</item>
+        <item>4 Attach</item>
+    </string-array>
+
+    <string-array name="bathroomCommonArray">
+        <item>1 Common</item>
+        <item>2 Common</item>
+        <item>3 Common</item>
+        <item>4 Common</item>
+    </string-array>
+
+    <string-array name="propStatusArray">
+        <item>Select</item>
+        <item>Under Construction</item>
+        <item>Ready to Move in</item>
+    </string-array>
+
+</resources>

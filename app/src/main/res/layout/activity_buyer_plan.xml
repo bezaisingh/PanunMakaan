@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyerPlan">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/btnBuyerRelaxPlan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buyer Relax Plan"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/caviardreams"
+        android:foregroundGravity="center"
+        android:shadowRadius="50"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

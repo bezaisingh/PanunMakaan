@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutUs">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/tvAboutUs1"
+            android:paddingLeft="5dp"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Panun Makaan  is an online  real-estate platform that makes it possible to Buy and Sell a house without paying any brokerage. "/>
+
+        <TextView
+            android:id="@+id/tvAboutUs2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:textSize="18sp"
+            android:text="Jammu &amp; Kashmir's No. 1 property portal, we deal with every aspect of the consumers’ needs in the real estate industry.
+It is an online platform where buyers and sellers can communicate directly, quickly, effectively and inexpensively.
+Panun Makaam was started because we believed that paying hefty brokerage can not be the only option to find a new home. We have also tried to ensure that maximum information is available to you in an easy to use format. This ensures that you get a very good idea of the property even before you visit it."/>
+        
+    </LinearLayout>
+
+
+
+</LinearLayout>

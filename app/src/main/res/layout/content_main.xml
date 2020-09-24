@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdf6fc"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/app_bar_main">
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/pm_logo_foreground"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="J&amp;K's first no brokerage real estate website"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                >
+
+                    <Button
+                        android:id="@+id/btnResident"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:background="@drawable/custom_button"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="Residential"
+                        android:textAllCaps="false"
+                        android:textColor="@color/button_text_color"/>
+
+                    <Button
+                        android:id="@+id/btnCommercial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/custom_button"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="Commercial"
+                        android:textAllCaps="false"
+                        android:textColor="@color/button_text_color" />
+
+                    <Button
+                        android:id="@+id/btnLand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_button"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="Land"
+                        android:textAllCaps="false"
+                        android:textColor="@color/button_text_color"
+                        />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_box_outline"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search Localities..."
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:background="@null"
+                android:inputType="text|textNoSuggestions"
+                android:layout_weight="0.7"/>
+
+            <ImageView
+                android:onClick="searchLocality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:src="@drawable/ic_search_black_24dp"
+                android:tint="@color/cardview_light_background"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:padding="4dp"/>
+
+
+        </LinearLayout>
+
+
+<!--
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_box_outline"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            >
+
+            <Spinner
+                android:id="@+id/spinDistrict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+            <Spinner
+                android:id="@+id/spinnerFloor"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                />
+
+            <Spinner
+
+                android:id="@+id/spinnerPropStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+-->
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                >
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Are you a Property Owner?"
+                    android:layout_gravity="center_horizontal"/>
+                <Button
+                    android:id="@+id/btnListPropForFree"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="List your Property for free"
+                    android:background="@drawable/custom_box_outline"
+                    android:backgroundTint="@color/red"
+                    android:fontFamily="@font/caviardreams"
+                    android:foregroundGravity="center"
+                    android:shadowRadius="50"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+
+<!--        <Button
+            android:id="@+id/custom_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Press me"
+            android:textAllCaps="false"
+            android:textColor="@color/button_text_color"
+            android:background="@drawable/custom_button"/>-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

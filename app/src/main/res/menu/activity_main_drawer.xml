@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_myProperty"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="My Property" />
+        <item
+            android:id="@+id/create_listing"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Create a listing" />
+
+<!--
+       <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Property Manager" />
+
+        <item
+            android:id="@+id/res_plan"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Residential Plans" />
+        <item
+            android:id="@+id/com_plan"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Commercial Plans" />
+        <item
+        android:id="@+id/land_plan"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="Land Plans" />
+
+-->
+        <item
+            android:id="@+id/nav_buyerPlan"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Buyer Plan" />
+
+        <item
+            android:id="@+id/nav_shortListedProp"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="My Shortlisted Properties"/>
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_baseline_input_24"
+            android:title="Logout" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Invite Friends" />
+
+            <item
+                android:id="@+id/nav_testimonals"
+                android:icon="@drawable/ic_baseline_feedback_24"
+                android:title="Testimonials" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_baseline_feedback_24"
+                android:title="Feedback" />
+            <item
+                android:id="@+id/about_us"
+                android:icon="@drawable/ic_baseline_feedback_24"
+                android:title="About Us" />
+        </menu>
+    </item>
+
+</menu>
