@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="313b27e2-d0e3-48f6-a527-a91730dbc3a6" name="Default Changelist" comment="PanunMakaan_24072020">
+      <change afterPath="$PROJECT_DIR$/PanunMakaan.git/trunk/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/AboutUs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/BuyerPlan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/BuyerRelaxPlan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/EnterOTP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/LoginWithEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/LoginWithMobile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/SearchResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/color/abc_btn_colored_borderless_text_material.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/color/btn_state.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/color/button_text_color.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_state.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/button_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/button_disabled.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/button_pressed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/captcha.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/circle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/custom_box_outline.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/custom_button.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/gradient.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/house.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_check_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_feedback_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_home_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_input_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/question_mark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/stroke.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/underline_button.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_about_us.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_buyer_plan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_buyer_relax_plan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_enter_o_t_p.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login_with_email.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login_with_mobile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_property_detail_com.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_search_result.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/search_result_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/CreateListingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/CreateListingActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/DescriptionCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/DescriptionCom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/DescriptionLand.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/DescriptionLand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/DescriptionRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/DescriptionRes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/LandDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/LandDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/LocalityDetailsCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/LocalityDetailsCom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/LocalityDetailsLand.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/LocalityDetailsLand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/LocalityDetailsRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/LocalityDetailsRes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/NearbyFacilityLand.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/NearbyFacilityLand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/NearbyFacilityRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/NearbyFacilityRes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/PriceDetailsCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/PriceDetailsCom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/PriceDetailsRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/PriceDetailsRes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/PropertyDetailsCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/PropertyDetailsCom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/PropertyDetailsRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/PropertyDetailsRes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_listing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_listing.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_description_com.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_description_com.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_description_land.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_description_land.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_property_details_res.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_property_details_res.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/property_detail_com.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_4_API_23_Marshmallow" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile_vertical" />
+        <option value="Gradle Kotlin DSL Settings" />
+        <option value="layoutResourceFile" />
+        <option value="valueResourceFile" />
+        <option value="resourceFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1eXALeqJ4djmdY0xv1mxw5NYUXm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="UO9LINSS9LE64SFM" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-09-23T10:23:23.599Z" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="conten&#9;FILE&#9;file://D:/PanunMaakan/app/src/main/res/layout/content_main.xml&#10;Main&#9;FILE&#9;file://D:/PanunMaakan/app/src/main/java/com/jacknjana/panunmaakan/MainActivity.java&#10;content&#9;FILE&#9;file://D:/PanunMaakan/app/src/main/res/layout/content_main.xml&#10;propert&#9;FILE&#9;file://D:/PanunMaakan/app/src/main/res/layout/activity_property_details.xml&#10;pricede&#9;FILE&#9;file://D:/PanunMaakan/app/src/main/res/layout/activity_price_details.xml&#10;locali&#9;FILE&#9;file://D:/PanunMaakan/app/src/main/res/layout/activity_locality_details.xml&#10;creat&#9;FILE&#9;file://D:/PanunMaakan/app/src/main/res/layout/activity_create_listing.xml&#10;reg&#9;FILE&#9;file://D:/PanunMaakan/app/src/main/res/layout/activity_registration.xml&#10;re&#9;FILE&#9;file://D:/PanunMaakan/app/src/main/res/layout/activity_registration.xml&#10;regi&#9;FILE&#9;file://D:/PanunMaakan/app/src/main/res/layout/activity_registration.xml&#10;login&#9;FILE&#9;file://D:/PanunMaakan/app/src/main/res/layout/activity_login.xml&#10;regis&#9;FILE&#9;file://D:/PanunMaakan/app/src/main/res/layout/activity_registration.xml" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="device.picker.selection" value="R4JVCQYTBMWCIZHU" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.-734693963">
+      <recent name="com.jacknjana.panunmaakan" />
+    </key>
+    <key name="android.template.1273587624">
+      <recent name="com.jacknjana.panunmaakan" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PanunMakaan\PanunMaakan Android Project\PanunMakaan07072020\PM\app\src\main\res\drawable" />
+      <recent name="E:\PanunMakaan\PanunMaakan Android Project\PanunMakaan07072020\PM\app\src\main\res\color" />
+      <recent name="E:\PanunMakaan\PanunMaakan Android Project\PanunMakaan07072020\PM\app\src\main\res\button_layouts" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="com.jacknjana.panunmaakan" />
+    </key>
+    <key name="android.template.1357119247">
+      <recent name="com.jacknjana.panunmaakan" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PanunMakaan\PanunMaakan Android Project\PanunMakaan07072020\PM\app\src\main\res\drawable" />
+      <recent name="D:\PanunMaakan\app\src\main\res\drawable-v24" />
+      <recent name="D:\PanunMaakan\app\src\main\res\layout" />
+      <recent name="D:\PanunMaakan\app\src\main\res\drawable" />
+      <recent name="D:\PanunMaakan\app\src\main\res\font" />
+    </key>
+    <key name="android.template.1782743269">
+      <recent name="com.jacknjana.panunmaakan" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="313b27e2-d0e3-48f6-a527-a91730dbc3a6" name="Default Changelist" comment="" />
+      <created>1592227007422</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592227007422</updated>
+    </task>
+    <task id="LOCAL-00001" summary="PanunMakaan_24072020">
+      <created>1595596258821</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595596258821</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="PanunMakaan_24072020" />
+    <option name="LAST_COMMIT_MESSAGE" value="PanunMakaan_24072020" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1600350481024">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1600350481024" />
+    <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600685445159">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1600685445159" />
+    <state x="349" y="172" key="AndroidCreateResourceDirectoryDialog" timestamp="1600857334136">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="349" y="172" key="AndroidCreateResourceDirectoryDialog/0.0.1536.834@0.0.1536.834" timestamp="1600857334136" />
+    <state x="349" y="172" key="AndroidCreateResourceFileDialog" timestamp="1600865344519">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="349" y="172" key="AndroidCreateResourceFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1600865344519" />
+    <state x="333" y="12" key="CommitChangelistDialog2" timestamp="1595605446549">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="333" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1595605446549" />
+    <state x="549" y="176" key="FileChooserDialogImpl" timestamp="1600856882431">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="176" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1600856882430" />
+    <state width="1491" height="332" key="GridCell.Tab.0.bottom" timestamp="1600876696626">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1491" height="332" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1600876696626" />
+    <state width="1491" height="332" key="GridCell.Tab.0.center" timestamp="1600876696626">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1491" height="332" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1600876696626" />
+    <state width="1491" height="332" key="GridCell.Tab.0.left" timestamp="1600876696626">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1491" height="332" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1600876696626" />
+    <state width="1491" height="332" key="GridCell.Tab.0.right" timestamp="1600876696626">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1491" height="332" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1600876696626" />
+    <state x="277" y="59" key="SettingsEditor" timestamp="1595314203954">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="277" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1595314203954" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1595596127137">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1595596127137" />
+    <state x="93" y="93" width="1350" height="648" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1594737952946">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="93" y="93" width="1350" height="648" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1536.834@0.0.1536.834" timestamp="1594737952946" />
+    <state width="508" height="151" key="javadoc.popup.new" timestamp="1600879732581">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="508" height="151" key="javadoc.popup.new/0.0.1536.834@0.0.1536.834" timestamp="1600879732581" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/PriceDetailsRes.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/LocalityDetailsCom.java</url>
+          <line>128</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/DescriptionRes.java</url>
+          <line>241</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/DescriptionRes.java</url>
+          <line>134</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/DescriptionRes.java</url>
+          <line>358</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/jacknjana/panunmaakan/DescriptionRes.java</url>
+          <line>200</line>
+          <properties class="com.jacknjana.panunmaakan.DescriptionRes.SendJsonDataToServer" method="onPreExecute">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
