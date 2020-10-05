@@ -17,7 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".LoginWithEmail"></activity>
+        <activity android:name=".MyShortListProp"></activity>
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".LoginWithEmail" />
         <activity android:name=".EnterOTP" />
         <activity android:name=".LoginWithMobile" />
         <activity android:name=".SearchResult" />
@@ -45,19 +47,15 @@
         <activity android:name=".Profile_Activity" />
         <activity android:name=".RegistrationPage" />
         <activity android:name=".LoginActivity" />
-
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-
-        </intent-filter>
-    </activity>
-
-
-<!--        <activity
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+        <activity
             android:name=".SplashActivity"
             android:label="@string/app_name"
             >
@@ -75,7 +73,6 @@
             </intent-filter>&ndash;&gt;
         </activity>
         -->
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

@@ -7,12 +7,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary" />
-
+    <include
+        layout="@layout/app_bar_main"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,6 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
 
             <LinearLayout
                 android:id="@+id/llSignupHeader"
@@ -41,12 +38,6 @@
                     android:textColor="#fff"
                     android:textSize="30sp"
                     android:textStyle="bold" />
-
-                <ImageView
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:layout_gravity="center"
-                    android:src="@mipmap/pm_logo_foreground" />
 
             </LinearLayout>
 
@@ -223,8 +214,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="40dp"
-                        android:background="@drawable/round_button"
+                        android:background="@drawable/custom_box_outline"
+                        android:backgroundTint="@color/red"
                         android:fontFamily="@font/caviardreams"
+                        android:textAllCaps="false"
                         android:foregroundGravity="center"
                         android:shadowRadius="50"
                         android:text="Sign up"

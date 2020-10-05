@@ -8,16 +8,13 @@
     android:orientation="vertical"
     android:background="#f2f2f2">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary" />
+    <include
+        layout="@layout/app_bar_main"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
         android:orientation="vertical"
         android:padding="10dp">
 
@@ -27,7 +24,7 @@
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/caviardreams"
             android:gravity="center"
-            android:text="Panun Makaan"
+            android:text="@string/app_name"
             android:textColor="#2e8b57"
             android:textSize="50sp"
             android:textStyle="bold" />
@@ -60,6 +57,22 @@
                 android:padding="10dp">
 
 
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/custom_box_outline"
+                    android:backgroundTint="@color/red"
+                    android:fontFamily="@font/caviardreams"
+                    android:foregroundGravity="center"
+                    android:onClick="LoginWithEmail"
+                    android:shadowRadius="50"
+                    android:text="Login with email and Password"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
 
                 <Button
                     android:onClick="LoginWithMobileNo"
@@ -80,22 +93,7 @@
                     android:textAllCaps="false"
                     android:textStyle="bold" />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginRight="20dp"
-                    android:background="@drawable/custom_box_outline"
-                    android:backgroundTint="@color/red"
-                    android:fontFamily="@font/caviardreams"
-                    android:foregroundGravity="center"
-                    android:onClick="LoginWithEmail"
-                    android:shadowRadius="50"
-                    android:text="Login with email and Password"
-                    android:textAllCaps="false"
-                    android:textColor="#fff"
-                    android:textStyle="bold" />
+
 
                 <TextView
                     android:id="@+id/tvSignUp"

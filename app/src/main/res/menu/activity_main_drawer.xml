@@ -12,10 +12,11 @@
             android:id="@+id/nav_myProperty"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="My Property" />
-        <item
+        
+<!--        <item
             android:id="@+id/create_listing"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Create a listing" />
+            android:title="Create a listing" />-->
 
 <!--
        <item

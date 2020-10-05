@@ -1,15 +1,13 @@
 package com.jacknjana.panunmaakan;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.cardview.widget.CardView;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class CreateListingActivity extends AppCompatActivity {
 
@@ -17,7 +15,7 @@ public class CreateListingActivity extends AppCompatActivity {
     SharedPreferences prf;
 TextView tvLoggedUser;
 //
-    CardView res, com, land;
+    TextView res, com, land;
     Toolbar toolbar;
     @Override
     public boolean onSupportNavigateUp() {
@@ -39,11 +37,19 @@ TextView tvLoggedUser;
         prf = getSharedPreferences("user_details",MODE_PRIVATE);
 //        tvLoggedUser.setText("Hello: "+prf.getString("RegNo",null));
 
-        toolbar = findViewById(R.id.toolbar);
+        //----------------Action Bar Starts--------------//
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        TextView name= findViewById(R.id.name);
+        name.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CreateListingActivity.this, MainActivity.class));
+            }
+        });
+        //----------------Action Bar Ends--------------//
 
         com.setOnClickListener(new View.OnClickListener() {
             @Override

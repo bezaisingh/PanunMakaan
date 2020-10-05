@@ -1,9 +1,5 @@
 package com.jacknjana.panunmaakan;
 
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -22,6 +18,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -43,7 +43,7 @@ import java.util.Locale;
 
 public class LoginWithEmail extends AppCompatActivity {
 
-    TextView textView;
+    TextView textView, tvForgotPassword;
     Toolbar toolbar;
     //Added on 20072020//
     SharedPreferences pref;
@@ -58,11 +58,19 @@ public class LoginWithEmail extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_with_email);
 
-        toolbar = findViewById(R.id.toolbar);
+        //----------------Action Bar Starts--------------//
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        TextView name= findViewById(R.id.name);
+        name.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginWithEmail.this, MainActivity.class));
+            }
+        });
+        //----------------Action Bar Ends--------------//
 
         pref = getSharedPreferences("user_details",MODE_PRIVATE);
 
@@ -75,6 +83,8 @@ public class LoginWithEmail extends AppCompatActivity {
         etLoginPassword= findViewById(R.id.etLoginPassword);
 
         textView = findViewById(R.id.registration_page);
+        tvForgotPassword = findViewById(R.id.tvForgotPassword);
+
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,6 +92,15 @@ public class LoginWithEmail extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        tvForgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(LoginWithEmail.this, ForgotPassword.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 

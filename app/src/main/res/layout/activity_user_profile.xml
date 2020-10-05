@@ -7,47 +7,27 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary">
-
-
-    </androidx.appcompat.widget.Toolbar>
+    <include
+        layout="@layout/app_bar_main"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:layout_gravity="center"
         android:background="#2e8b57"
-        android:orientation="vertical"
         android:padding="20dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:fontFamily="@font/caviardreams"
                 android:gravity="center"
+                android:layout_gravity="center_vertical"
                 android:text="Profile"
                 android:textColor="#fff"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:layout_gravity="center"
-                android:src="@drawable/logo" />
-
-        </LinearLayout>
     </LinearLayout>
 
     <ScrollView
@@ -78,7 +58,6 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:hint="first name"
                     android:maxLines="1"
                     android:singleLine="true" />
 
@@ -101,7 +80,6 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:hint="last name"
                     android:maxLines="1"
                     android:singleLine="true" />
 
@@ -124,7 +102,6 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="mobile number"
                     android:maxLength="11"
                     android:maxLines="1"
                     android:numeric="integer"
@@ -150,7 +127,7 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="email address"
+
                     android:maxLength="50"
                     android:maxLines="1"
                     android:singleLine="true" />
@@ -174,7 +151,6 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="dob"
                     android:maxLength="50"
                     android:maxLines="1"
                     android:singleLine="true" />
@@ -198,7 +174,6 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="city"
                     android:maxLength="50"
                     android:maxLines="1"
                     android:singleLine="true" />
@@ -222,7 +197,6 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="location"
                     android:maxLength="50"
                     android:maxLines="1"
                     android:singleLine="true" />
@@ -246,7 +220,6 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="state"
                     android:maxLength="50"
                     android:maxLines="1"
                     android:singleLine="true" />
@@ -269,12 +242,9 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
-                    android:hint="pincode"
                     android:inputType="number"
                     android:maxLength="6"
                     android:maxLines="1"
-                    android:phoneNumber="true"
                     android:singleLine="true" />
 
             </LinearLayout>
@@ -284,8 +254,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                android:background="@drawable/round_button"
+                android:background="@drawable/custom_box_outline"
+                android:backgroundTint="@color/red"
                 android:fontFamily="@font/caviardreams"
+                android:textAllCaps="false"
                 android:foregroundGravity="center"
                 android:shadowRadius="50"
                 android:text="Submit"

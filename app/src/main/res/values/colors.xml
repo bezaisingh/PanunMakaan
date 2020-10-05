@@ -13,6 +13,7 @@
 
     <color name="yellow">#ffc107</color>
     <color name="green">#28a745</color>
+    <color name="deep_green">#2e8b57</color>
     <color name="teal">#20c997</color>
     <color name="cyan">#17a2b8</color>
     <color name="white">#fff</color>

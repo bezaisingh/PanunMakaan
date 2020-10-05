@@ -3,36 +3,29 @@ package com.jacknjana.panunmaakan;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import android.text.Layout;
 import android.util.Log;
-import android.view.View;
-
-import com.google.android.material.navigation.NavigationView;
-
-import androidx.cardview.widget.CardView;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.CompoundButton;
-import android.widget.LinearLayout;
 import android.widget.Spinner;
-import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, AdapterView.OnItemSelectedListener {
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.google.android.material.navigation.NavigationView;
+
+public class MainActivity extends AppCompatActivity
+                          implements NavigationView.OnNavigationItemSelectedListener,
+                                     AdapterView.OnItemSelectedListener,
+                                     FeedbackDialog.FeedbackDialogListener {
 
     Spinner spinnerPropStatus, spinnerFloor, spinDistrict;
     CardView my_profile;
@@ -40,21 +33,39 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     String Floor, PropStatus, District;
     Button btnListPropForFree, btnResident, btnCommercial, btnLand, customButton;
 
+    private TextView textViewUsername;
+
     String TAG = "++++++++++++BIJAY SELF CHECK+++++++++++++++";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //----------------Action Bar Starts--------------//
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        TextView name= findViewById(R.id.name);
+        name.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MainActivity.class));
+            }
+        });
+        //----------------Action Bar Ends--------------//
 
 
+
+        textViewUsername = findViewById(R.id.textview_username);
         ////////
        // customButton = findViewById(R.id.custom_button);
         btnResident= findViewById(R.id.btnResident);
         btnCommercial = findViewById(R.id.btnCommercial);
         btnLand= findViewById(R.id.btnLand);
+
+
 
 
 
@@ -236,7 +247,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //Setting Navigation Header name
         View headerView = navigationView.getHeaderView(0);
         TextView navUsername = (TextView) headerView.findViewById(R.id.tvLoggedUserNameNavHeader);
-        navUsername.setText("Hello " + prf.getString("RegNo", null));
+        navUsername.setText("Hello " + prf.getString("RegNo", "User"));// Changed defValue from null to "User" on 25092020
 
 
         // my_profile = findViewById(R.id.my_profile);
@@ -249,6 +260,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
     }
+
+    // For Feedback Starts
+
+    public void openDialog() {
+        FeedbackDialog exampleDialog = new FeedbackDialog();
+        exampleDialog.show(getSupportFragmentManager(), "example dialog");
+
+        exampleDialog.setCancelable(false);// To prevent Dialog box to close if touched outside the box
+    }
+        @Override
+        public void applyTexts(String username) {
+            textViewUsername.setText(username);
+
+        }
+
+        // For Feedback ends
 
     @Override
     public void onBackPressed() {
@@ -297,7 +324,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             // Handle the camera action
         } else if (id == R.id.nav_myProperty) {
 
-        } else if (id == R.id.create_listing) {
+        }
+
+       /* else if (id == R.id.create_listing) {
             prf = getSharedPreferences("user_details", MODE_PRIVATE);
             String loginStatus = prf.getString("LoginId", "null");
             if (loginStatus.equals("null")) {
@@ -310,7 +339,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(new Intent(MainActivity.this, CreateListingActivity.class));
             }
 
-        } else if (id == R.id.nav_buyerPlan) {
+        } */
+
+
+           else if (id == R.id.nav_shortListedProp) {
+            prf = getSharedPreferences("user_details", MODE_PRIVATE);
+            String loginStatus = prf.getString("LoginId", "null");
+            if (loginStatus.equals("null")) {
+                Log.v(TAG, "Shared Preference Data..........................: " + loginStatus);
+                Toast.makeText((this), "Redirecting to Login Page", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
+
+            } else {
+                Toast.makeText((this), "Redirecting to Create Listing Page", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, MyShortListProp.class));
+            }
+
+        }
+
+        else if (id == R.id.nav_buyerPlan) {
             Toast.makeText((this), "Redirecting to Buyer Plans", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(MainActivity.this, BuyerPlan.class));
 
@@ -318,8 +365,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             Intent shareIntent = new Intent(Intent.ACTION_SEND);
             shareIntent.setType("text/plain");
-            shareIntent.putExtra(Intent.EXTRA_TEXT, "Checkout Panun Makaan, Kashmir's first " +
-                    "no brokerage app, download from Playstore https://www.google.panunmakaan.in/");
+            shareIntent.putExtra(Intent.EXTRA_TEXT, "Checkout Panun Makaan, Jammu & Kashmir's first " +
+                    "no brokerage real estate website, download from Playstore https://play.google.com/store/apps/details?id=com.nobroker.app");
             startActivity(Intent.createChooser(shareIntent, "Share Using..."));
 
 
@@ -331,6 +378,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(new Intent(MainActivity.this, MainActivity.class));
         } else if (id == R.id.about_us) {
             startActivity(new Intent(MainActivity.this, AboutUs.class));
+        }
+
+        else if (id == R.id.nav_feedback) {
+            openDialog();
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

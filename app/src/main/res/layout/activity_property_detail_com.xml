@@ -6,18 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary">
+    <include
+        layout="@layout/app_bar_main"/>
 
-
-    </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         android:background="@color/colorPrimary"
         android:gravity="center"
         android:orientation="vertical">
@@ -89,7 +84,6 @@
                     android:id="@+id/etComPdArea"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:hint="Area"
                     android:maxLines="1"
                     android:singleLine="true" />
 
@@ -215,8 +209,6 @@
                             android:id="@+id/date_show"
                             android:layout_width="250dp"
                             android:layout_height="40dp"
-                            android:editable="false"
-                            android:hint="possesion date"
                             android:maxLines="1"
                             android:singleLine="true" />
 
@@ -292,7 +284,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="40dp"
-                    android:background="@drawable/round_button"
+                    android:background="@drawable/custom_box_outline"
+                    android:backgroundTint="@color/red"
+                    android:fontFamily="@font/caviardreams"
+                    android:textAllCaps="false"
                     android:foregroundGravity="center"
                     android:shadowRadius="50"
                     android:text="Save and Next"

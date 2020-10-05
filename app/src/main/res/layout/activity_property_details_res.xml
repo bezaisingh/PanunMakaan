@@ -6,14 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary">
-
-
-    </androidx.appcompat.widget.Toolbar>
+    <include
+        layout="@layout/app_bar_main"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -61,7 +55,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginLeft="10dp"
-                    android:hint="house name"
                     android:maxLines="1"
                     android:singleLine="true" />
 
@@ -85,7 +78,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginLeft="10dp"
-                    android:hint="house number"
                     android:maxLines="1"
                     android:singleLine="true" />
 
@@ -109,7 +101,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginLeft="10dp"
-                    android:hint="ownership"
                     android:maxLines="1"
                     android:singleLine="true" />
 
@@ -151,6 +142,36 @@
                     </RelativeLayout>
 
                 </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Property Status"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+
+                    <Spinner
+
+                        android:id="@+id/spinResPdPropStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"/>
+
+                </RelativeLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -409,8 +430,7 @@
                             android:id="@+id/etResPdDate"
                             android:layout_width="250dp"
                             android:layout_height="40dp"
-                            android:editable="false"
-                            android:hint="possesion date"
+                            android:inputType="date"
                             android:maxLines="1"
                             android:singleLine="true" />
 
@@ -485,42 +505,17 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Property Status"
-                        android:textColor="#000"
-                        android:textSize="15sp" />
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="10dp">
-
-
-                        <Spinner
-
-                            android:id="@+id/spinResPdPropStatus"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentTop="true"/>
-
-                    </RelativeLayout>
-
-                </LinearLayout>
 
                 <Button
-             android:onClick="PropertyDetailsResBtn"
+                    android:onClick="PropertyDetailsResBtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="40dp"
-                    android:background="@drawable/round_button"
+                    android:background="@drawable/custom_box_outline"
+                    android:backgroundTint="@color/red"
+                    android:fontFamily="@font/caviardreams"
+                    android:textAllCaps="false"
                     android:foregroundGravity="center"
                     android:shadowRadius="50"
                     android:text="Save and Next "

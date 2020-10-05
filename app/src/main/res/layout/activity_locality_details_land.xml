@@ -4,18 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary">
+    <include
+        layout="@layout/app_bar_main"/>
 
-
-    </androidx.appcompat.widget.Toolbar>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
@@ -87,10 +80,10 @@
                     android:textSize="15sp" />
 
                 <EditText
-android:id="@+id/etLandLocDetLocality"
+                    android:id="@+id/etLandLocDetLocality"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:hint="locality"
+
                     android:maxLines="1" />
 
             </LinearLayout>
@@ -109,10 +102,9 @@ android:id="@+id/etLandLocDetLocality"
                     android:textSize="15sp" />
 
                 <EditText
-android:id="@+id/etLandLocDetStreetAreaName"
+                    android:id="@+id/etLandLocDetStreetAreaName"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:hint="street area name"
                     android:maxLines="1" />
 
             </LinearLayout>
@@ -131,10 +123,9 @@ android:id="@+id/etLandLocDetStreetAreaName"
                     android:textSize="15sp" />
 
                 <EditText
-android:id="@+id/etLandLocDetLandmark"
+                    android:id="@+id/etLandLocDetLandmark"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:hint="landmark"
                     android:maxLines="1" />
 
             </LinearLayout>
@@ -152,10 +143,9 @@ android:id="@+id/etLandLocDetLandmark"
                     android:textSize="15sp" />
 
                 <EditText
-android:id="@+id/etLandLocDetPincode"
+                    android:id="@+id/etLandLocDetPincode"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:hint="pincode"
                     android:maxLines="1" />
 
             </LinearLayout>
@@ -166,7 +156,10 @@ android:id="@+id/etLandLocDetPincode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                android:background="@drawable/round_button"
+                android:background="@drawable/custom_box_outline"
+                android:backgroundTint="@color/red"
+                android:fontFamily="@font/caviardreams"
+                android:textAllCaps="false"
                 android:foregroundGravity="center"
                 android:shadowRadius="50"
                 android:text="Save and Next"

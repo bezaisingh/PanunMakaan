@@ -1,13 +1,13 @@
 package com.jacknjana.panunmaakan;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.cardview.widget.CardView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 
 public class LandList extends AppCompatActivity {
 
@@ -26,11 +26,19 @@ Toolbar toolbar;
 
         setContentView(R.layout.activity_land_listing);
 
-        toolbar = findViewById(R.id.toolbar);
+        //----------------Action Bar Starts--------------//
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        TextView name= findViewById(R.id.name);
+        name.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LandList.this, MainActivity.class));
+            }
+        });
+        //----------------Action Bar Ends--------------//
 
         land_details = findViewById(R.id.land_details);
         loc_details_land = findViewById(R.id.loc_details_land);

@@ -8,12 +8,8 @@
     android:background="#f2f2f2"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"/>
-
+    <include
+        layout="@layout/app_bar_main"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -29,8 +25,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="20dp">
-
-
 
             </LinearLayout>
 
@@ -79,7 +73,8 @@
                     android:fontFamily="@font/caviardreams"
                     android:hint="Mobile number "
                     android:maxLength="10"
-                    android:textColor="#fff"
+                    android:lines="1"
+                    android:inputType="phone"
                     android:textColorHint="@color/gray"
                     android:textStyle="bold" />
 

@@ -8,13 +8,13 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class LoginWithMobile extends AppCompatActivity {
-    Toolbar toolbar;
+public class MyShortListProp extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_with_mobile);
+        setContentView(R.layout.activity_my_short_list_prop);
+
         //----------------Action Bar Starts--------------//
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -24,28 +24,9 @@ public class LoginWithMobile extends AppCompatActivity {
         name.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginWithMobile.this, MainActivity.class));
+                startActivity(new Intent(MyShortListProp.this, MainActivity.class));
             }
         });
         //----------------Action Bar Ends--------------//
-
-    }
-
-    public void LoginWithEmail(View view) {
-        Intent intent=new Intent(this, LoginWithEmail.class);
-        startActivity(intent);
-    }
-
-    public void submitForOTP(View view) {
-        Intent intent=new Intent(this, EnterOTP.class);
-        startActivity(intent);
-    }
-
-
-
-    @Override
-    public boolean onSupportNavigateUp() {
-        onBackPressed();
-        return true;
     }
 }

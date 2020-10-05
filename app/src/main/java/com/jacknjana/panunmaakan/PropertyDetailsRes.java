@@ -1,9 +1,5 @@
 package com.jacknjana.panunmaakan;
 
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.Context;
@@ -17,13 +13,16 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
-import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -38,7 +37,6 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.Date;
 import java.util.Locale;
-import java.util.Random;
 
 public class PropertyDetailsRes extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
@@ -96,11 +94,20 @@ public class PropertyDetailsRes extends AppCompatActivity implements AdapterView
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_property_details_res);
+
+        //----------------Action Bar Starts--------------//
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        TextView name= findViewById(R.id.name);
+        name.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PropertyDetailsRes.this, MainActivity.class));
+            }
+        });
+        //----------------Action Bar Ends--------------//
 
         prf = getSharedPreferences("user_details",MODE_PRIVATE);
         RegNo= prf.getString("RegNo",null);

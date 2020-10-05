@@ -7,11 +7,8 @@
     android:layout_height="match_parent"
     tools:context=".BuyerPlan">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"/>
+    <include
+        layout="@layout/app_bar_main"/>
 
     <Button
         android:id="@+id/btnBuyerRelaxPlan"
@@ -19,9 +16,11 @@
         android:layout_height="wrap_content"
         android:text="Buyer Relax Plan"
         android:layout_centerInParent="true"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:background="@drawable/round_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/custom_box_outline"
+        android:backgroundTint="@color/red"
+        android:textAllCaps="false"
         android:fontFamily="@font/caviardreams"
         android:foregroundGravity="center"
         android:shadowRadius="50"

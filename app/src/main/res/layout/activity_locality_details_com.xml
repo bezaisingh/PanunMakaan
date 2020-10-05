@@ -4,18 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary">
-
-
-    </androidx.appcompat.widget.Toolbar>
+    <include
+        layout="@layout/app_bar_main"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -94,7 +86,6 @@
                     android:id="@+id/etComLdLocality"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:hint="Locality"
                     android:maxLines="1"
                     android:singleLine="true" />
 
@@ -117,7 +108,6 @@
                     android:id="@+id/etComLdStreetAreaName"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:hint="street area name"
                     android:maxLines="1"
                     android:singleLine="true" />
 
@@ -140,7 +130,6 @@
                     android:id="@+id/etComLdLandmark"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:hint="landmark"
                     android:maxLines="1"
                     android:singleLine="true" />
 
@@ -163,7 +152,6 @@
                     android:id="@+id/etComLdPincode"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:hint="pincode"
                     android:maxLines="1"
                     android:inputType="number"
                     android:singleLine="true" />
@@ -176,7 +164,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                android:background="@drawable/round_button"
+                android:background="@drawable/custom_box_outline"
+                android:backgroundTint="@color/red"
+                android:fontFamily="@font/caviardreams"
+                android:textAllCaps="false"
                 android:foregroundGravity="center"
                 android:shadowRadius="50"
                 android:text="Save and Next"

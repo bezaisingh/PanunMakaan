@@ -7,11 +7,8 @@
     android:layout_height="match_parent"
     tools:context=".BuyerRelaxPlan">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"/>
+    <include
+        layout="@layout/app_bar_main"/>
 
 
     <RelativeLayout
@@ -34,7 +31,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Power Plan"
+        android:text="Buyer Relax Plan"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -106,27 +103,6 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:layout_weight="0.9"
-                    android:text="Legal Assistance" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:background="#ffffff"
-                    android:src="@drawable/ic_baseline_check_24"
-                    android:layout_weight="0.1"/>
-
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -137,7 +113,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
-                    android:text="Loan Assistance"
+                    android:text="Save Lakhs in Brokerage"
                     android:layout_weight="0.9"/>
 
                 <ImageView
@@ -154,7 +130,9 @@
                 android:layout_height="wrap_content"
                 android:text="Subscribe"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/round_button"
+                android:background="@drawable/custom_box_outline"
+                android:backgroundTint="@color/red"
+                android:textAllCaps="false"
                 android:fontFamily="@font/caviardreams"
                 android:foregroundGravity="center"
                 android:shadowRadius="50"

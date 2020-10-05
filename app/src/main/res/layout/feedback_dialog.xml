@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Provide Your Feedback"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="We are excited to hear from you about your experience wirh our products &amp; services."
+        android:textSize="14sp"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="12sp"
+        android:inputType="textAutoCorrect"
+        android:lines="3"
+
+        android:hint="Share your experience with us" />
+
+
+</LinearLayout>

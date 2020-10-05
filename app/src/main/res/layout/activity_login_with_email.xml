@@ -9,11 +9,8 @@ android:background="#f2f2f2"
 android:orientation="vertical"
 tools:context=".LoginWithEmail">
 
-<androidx.appcompat.widget.Toolbar
-    android:id="@+id/toolbar"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/colorPrimary" />
+    <include
+        layout="@layout/app_bar_main"/>
 
 
 <ScrollView
@@ -22,25 +19,16 @@ tools:context=".LoginWithEmail">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dp">
-
-
-
-        </LinearLayout>
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="100dp"
             android:orientation="vertical"
             android:padding="10dp">
 
@@ -65,7 +53,7 @@ tools:context=".LoginWithEmail">
             </ImageView>
 
             <!--
-                 Add the below line in EditText to have pencil icon in the edittext field
+                 Add the below line in EditText to have pencil icon in the edit text field
                  android:drawableRight="@drawable/ic_mode_edit_black_24dp"
              -->
 
@@ -79,8 +67,7 @@ tools:context=".LoginWithEmail">
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/caviardreams"
                 android:hint="Email Id "
-                android:maxLength="10"
-
+                android:inputType="textEmailAddress"
                 android:textColorHint="@color/gray"
                 android:textStyle="bold" />
 
@@ -96,7 +83,9 @@ tools:context=".LoginWithEmail">
                 android:layout_marginRight="30dp"
                 android:fontFamily="@font/caviardreams"
                 android:hint="Password"
-                android:maxLength="10"
+                android:lines="1"
+                android:maxLength="20"
+                android:inputType="textPassword"
                 android:textColorHint="@color/gray"
                 android:textStyle="bold" />
 
@@ -110,14 +99,16 @@ tools:context=".LoginWithEmail">
                 android:background="@drawable/custom_box_outline"
                 android:backgroundTint="@color/red"
                 android:fontFamily="@font/caviardreams"
+                android:textAllCaps="false"
                 android:foregroundGravity="center"
                 android:shadowRadius="50"
                 android:text="Login"
                 android:textColor="#fff"
                 android:textStyle="bold"
-                android:textAllCaps="false"/>
+               />
 
             <TextView
+                android:id="@+id/tvForgotPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"

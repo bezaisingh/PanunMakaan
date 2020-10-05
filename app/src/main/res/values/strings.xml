@@ -7,9 +7,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="url">http://makaan.disgenonline.in:8081/</string>
-
     <string name="SignUp"><u>Sign Up</u></string>
-
     <string name="Underline"> Don\'t have an account? <u>Sign Up</u>.</string>
 
     <!--
@@ -33,6 +31,7 @@ http://makaan.disgenonline.in:8081/
         <item>10</item>
     </string-array>
     <string-array name="totalFloorArray">
+        <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
@@ -45,13 +44,14 @@ http://makaan.disgenonline.in:8081/
         <item>10</item>
     </string-array>
     <string-array name="floorNumberArray">
-        <item>Select</item>
+        <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
 
     </string-array>
     <string-array name="hallNumberArray">
+        <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
@@ -60,6 +60,7 @@ http://makaan.disgenonline.in:8081/
 
 
     <string-array name="parkingArray">
+        <item>Select</item>
         <item>Covered</item>
         <item>Open</item>
         <item>No</item>
@@ -68,6 +69,7 @@ http://makaan.disgenonline.in:8081/
 
 
     <string-array name="furnishingStatusArray">
+        <item>Select</item>
         <item>Unfurnished</item>
         <item>Semi Furnished</item>
         <item>Fully Furnished</item>
@@ -76,6 +78,7 @@ http://makaan.disgenonline.in:8081/
 
 
     <string-array name="kitchenTypeArray">
+        <item>Select</item>
         <item>Modular</item>
         <item>Open Shelves</item>
 
@@ -89,6 +92,8 @@ http://makaan.disgenonline.in:8081/
 
     </string-array>
     <string-array name="bedroomArray">
+        <item>1</item>
+        <item>2</item>
         <item>3</item>
         <item>4</item>
         <item>5</item>
@@ -137,28 +142,31 @@ http://makaan.disgenonline.in:8081/
     </string-array>
 
     <string-array name="yesNoArray">
+        <item>Select</item>
         <item>Yes</item>
         <item>No</item>
     </string-array>
 
     <string-array name="kanalArray">
-        <item>1 Kanal</item>
-        <item>2 Kanal</item>
-        <item>3 Kanal</item>
-        <item>4 Kanal</item>
-        <item>5 Kanal</item>
+        <item>0 </item>
+        <item>1 </item>
+        <item>2 </item>
+        <item>3 </item>
+        <item>4 </item>
+        <item>5 </item>
 
     </string-array>
 
     <string-array name="marlaArray">
-        <item>1 Marla</item>
-        <item>2 Marla</item>
-        <item>3 Marla</item>
-        <item>4 Marla</item>
-        <item>5 Marla</item>
-        <item>6 Marla</item>
-        <item>7 Marla</item>
-        <item>8 Marla</item>
+        <item>0 </item>
+        <item>1 </item>
+        <item>2 </item>
+        <item>3 </item>
+        <item>4 </item>
+        <item>5 </item>
+        <item>6 </item>
+        <item>7 </item>
+        <item>8 </item>
     </string-array>
 
     <string-array name="bathroomAttachArray">
